@@ -94,4 +94,5 @@ def getEnvVar(String paramName){
     return sh (script: "grep '${paramName}' env_vars/project.properties|cut -d'=' -f2", returnStdout: true).trim();
 
 }
+#test
 
